@@ -2,11 +2,11 @@
 
 import { FC } from 'react'
 
-import style from './style.module.scss'
+import styles from './styles.module.scss'
 
 const Krovli: FC = () => {
   return (
-    <div className={style.container}>
+    <div className={styles.container}>
       <h1>Krovli</h1>
       <p>Раздел в стадии разработки</p>
     </div>

@@ -7,6 +7,7 @@ import { ConfigProvider, ConfigProviderProps, ThemeConfig } from 'antd'
 import { COLORS } from '@/styles/colors'
 
 import './globals.css'
+import { Header } from '@/components/Header'
 
 type Locale = ConfigProviderProps['locale']
 
@@ -100,7 +101,8 @@ export default function RootLayout({
       <body className={`${robotoSerif.variable} `}>
         <AntdRegistry>
           <ConfigProvider theme={config}>
-            <Suspense fallback={<div>PЗагрузка данных...</div>}>{children}</Suspense>
+            <Header />
+            <Suspense fallback={<div>Загрузка данных...</div>}>{children}</Suspense>
           </ConfigProvider>
         </AntdRegistry>
       </body>

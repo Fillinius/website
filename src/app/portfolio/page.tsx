@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-import style from './style.module.scss'
+import style from './styles.module.scss'
 
 const Portfolio: FC = () => {
   return (

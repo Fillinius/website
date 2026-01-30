@@ -1,4 +1,4 @@
-export const PATH = {
+export const PATHS = {
   home: '/home',
   krovli: '/krovli',
   montaj: '/montaj',

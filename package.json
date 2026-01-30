@@ -23,13 +23,11 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "babel-plugin-react-compiler": "1.0.0",
     "eslint": "^9",
     "eslint-config-next": "15.1.6",
     "eslint-config-prettier": "^10.0.1",
     "prettier": "^3.4.2",
     "sass": "^1.83.4",
-    "tailwindcss": "^4",
     "typescript": "^5"
   }
 }

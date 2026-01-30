@@ -2,11 +2,11 @@
 
 import { FC } from 'react'
 
-import style from './style.module.scss'
+import style from './styles.module.scss'
 
 const HomePage: FC = () => {
   return (
-    <main className={style.container}>
+    <main>
       <h1>Home</h1>
       <p>Раздел в стадии разработки</p>
     </main>

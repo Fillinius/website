@@ -1,11 +1,17 @@
 import type { NextConfig } from 'next'
+import path from 'path'
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  reactCompiler: true,
+  reactStrictMode: true,
   eslint: {
     ignoreDuringBuilds: true, // Игнорировать ESLint во время сборки
   },
+  /* config options here */
+  sassOptions: {
+    includePaths: [path.join(__dirname, 'src/styles')],
+    // prependData: `@use 'variables' as *;`,
+  },
+
   // images: {
   //   domains: ['xn--e1aedkmddr7af0f.xn--p1ai'],
   //   remotePatterns: [
@@ -18,9 +24,6 @@ const nextConfig: NextConfig = {
   //   ],
   // },
 
-  // experimental: {
-  //   esmExternals: 'loose',
-  // },
   async redirects() {
     return [
       {
