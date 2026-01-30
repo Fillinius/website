@@ -1,13 +1,13 @@
-import type { Metadata } from 'next'
 import '@ant-design/v5-patch-for-react-19'
+import type { Metadata } from 'next'
 import { AntdRegistry } from '@ant-design/nextjs-registry'
 import { Roboto } from 'next/font/google'
 import { Suspense } from 'react'
 import { ConfigProvider, ConfigProviderProps, ThemeConfig } from 'antd'
 import { COLORS } from '@/styles/colors'
+import { Header, Footer } from '@/components'
 
 import './globals.css'
-import { Header } from '@/components/Header'
 
 type Locale = ConfigProviderProps['locale']
 
@@ -103,6 +103,7 @@ export default function RootLayout({
           <ConfigProvider theme={config}>
             <Header />
             <Suspense fallback={<div>Загрузка данных...</div>}>{children}</Suspense>
+            <Footer />
           </ConfigProvider>
         </AntdRegistry>
       </body>

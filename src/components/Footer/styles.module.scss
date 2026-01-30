@@ -1,0 +1,16 @@
+@use '@/styles/variables' as *;
+
+.footer {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: $grey_40;
+
+  // @media (max-width: 768px) {
+  //   flex-direction: column;
+  //   height: 800px;
+  // }
+}
