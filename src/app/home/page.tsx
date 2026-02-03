@@ -2,13 +2,21 @@
 
 import { FC } from 'react'
 
-import style from './styles.module.scss'
+import Title from 'antd/es/typography/Title'
+import { Home } from '@/components'
+import bgImage from '@/assets/images/bg.jpg'
+
+import styles from './styles.module.scss'
 
 const HomePage: FC = () => {
   return (
-    <main>
-      <h1>Home</h1>
-      <p>Раздел в стадии разработки</p>
+    <main className={styles.container}>
+      <div className={styles.titleWrapper} style={{ backgroundImage: `url(${bgImage.src})` }}>
+        <div className={styles.title}>
+          <Title level={1}>ГК Строй-Град</Title>
+        </div>
+      </div>
+      <Home />
     </main>
   )
 }

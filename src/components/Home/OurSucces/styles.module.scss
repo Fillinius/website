@@ -1,0 +1,76 @@
+@use '@/styles/variables.scss' as *;
+
+.container {
+  width: 100%;
+  min-height: 380px;
+  background: $grey_60;
+  padding-bottom: 20px;
+}
+
+.ourSuccesWrapper {
+  width: 100%;
+  // max-width: 940px;
+  margin: 0 40px;
+  margin-top: 60px;
+
+  // @media(){
+  //   max-width: 940px;
+  // }
+}
+
+.titleWrapper {
+  .title {
+    padding-bottom: 15px;
+    font-size: 38px;
+    line-height: 1.23;
+    text-align: left;
+  }
+
+  .text {
+    padding-bottom: 20px;
+    font-size: 22px;
+    max-width: 560px;
+  }
+}
+
+.blockWrapper {
+  width: 100%;
+  max-width: 1500px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 1 1 280px;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 340px;
+  height: 200px;
+  padding: 10px;
+
+  .blockTitle {
+    font-size: 30px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+    margin-right: 20px;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+
+  .blockText {
+    width: 100%;
+    max-width: 300px;
+    padding-top: 4px;
+    padding-bottom: 6px;
+    margin-right: 20px;
+    font-size: 16px;
+    line-height: 1.55;
+    font-weight: 300;
+    text-wrap: wrap;
+  }
+}
