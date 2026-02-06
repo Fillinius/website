@@ -1,0 +1,44 @@
+.typeFloorWrapper {
+  padding: 40px 0;
+  width: 100%;
+  max-width: 1200px;
+
+  p {
+    color: #abe200;
+    font-family: 'Bebas';
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 500;
+    padding-bottom: 30px;
+    max-width: 600px;
+    margin: auto;
+    // padding-bottom: 40px;
+  }
+
+  :global(.ant-typography) {
+    font-size: 42px;
+    line-height: 1.23;
+  }
+}
+
+.typeFloorList {
+  width: 100%;
+  max-width: 1200px;
+  padding-top: 45px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 30px;
+
+  .itemTitle {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.35;
+    padding-bottom: 30px;
+  }
+
+  .itemText {
+    font-size: 18px;
+    line-height: 1.55;
+  }
+}
