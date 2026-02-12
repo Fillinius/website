@@ -1,0 +1,46 @@
+@use '@/styles/variables' as *;
+
+.krovliWrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.krovliHeaderWrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 10px;
+  padding-top: 60px;
+
+  .title {
+    font-size: 42px;
+    line-height: 1.23;
+    margin-bottom: 40px;
+  }
+
+  .text {
+    font-size: 20px;
+    line-height: 1.55;
+  }
+}
+
+.chooseKrovliWrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 10px;
+  padding-top: 60px;
+  text-align: center;
+
+  .title {
+    font-size: 42px;
+    margin-bottom: 10px;
+  }
+
+  .textRed {
+    font-size: 40px;
+    line-height: 1.55;
+    color: $bgButton;
+  }
+}

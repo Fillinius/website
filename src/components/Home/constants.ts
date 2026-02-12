@@ -7,7 +7,7 @@ import starIcon from '@/assets/svg/star_calendar.svg'
 import headIcon from '@/assets/svg/head_planning_process.svg'
 import moneyIcon from '@/assets/svg/money.svg'
 
-import { AdvantageList } from './type'
+import { AdvantageList } from '../../ui/Advantage/type'
 
 export const advantageHome: AdvantageList = {
   title: 'Преимущества нашей компании',
