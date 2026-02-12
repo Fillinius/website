@@ -36,9 +36,9 @@ export const metadata: Metadata = {
   // verification: {
   //   yandex: 'your-yandex-verification',
   // },
-  // alternates: {
-  //   canonical: 'https://angarstroy.ru',
-  // },
+  alternates: {
+    canonical: 'https://stroy-gradnn.ru/',
+  }, // SEO-эффект: Переносит ссылочный вес с дублей на главную страницу, улучшая ранжирование.
   robots: {
     index: true,
     follow: true,
