@@ -35,9 +35,7 @@ export const metadata: Metadata = {
   // verification: {
   //   yandex: 'your-yandex-verification',
   // },
-  // alternates: {
-  //   canonical: 'https://angarstroy.ru',
-  // },
+
   robots: {
     index: true,
     follow: true,

@@ -1,14 +1,23 @@
 import { FC } from 'react'
 
-import style from './styles.module.scss'
+import styles from './styles.module.scss'
+import Title from 'antd/es/typography/Title'
+import { Portfolio } from '@/components/Portfolio'
+import { portfolioList } from './constants'
 
-const Portfolio: FC = () => {
+const PortfolioPage: FC = () => {
   return (
-    <div className={style.container}>
-      <h1>Portfolio</h1>
-      <p>Раздел в стадии разработки</p>
-    </div>
+    <main className={styles.container}>
+      <div className={styles.titleWrapper}>
+        <div className={styles.title}>
+          <Title level={1}>ГК Строй-Град - наши работы.</Title>
+        </div>
+      </div>
+      {portfolioList.map((portfolio) => (
+        <Portfolio key={portfolio.id} {...portfolio} />
+      ))}
+    </main>
   )
 }
 
-export default Portfolio
+export default PortfolioPage

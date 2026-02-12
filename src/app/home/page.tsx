@@ -4,7 +4,7 @@ import { FC } from 'react'
 
 import Title from 'antd/es/typography/Title'
 import { Home } from '@/components'
-import bgImage from '@/assets/images/bg.jpg'
+import bgImage from '@/assets/images/bgHome.jpg.webp'
 
 import styles from './styles.module.scss'
 
