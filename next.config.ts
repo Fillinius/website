@@ -3,10 +3,6 @@ import path from 'path'
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  eslint: {
-    ignoreDuringBuilds: true, // Игнорировать ESLint во время сборки
-  },
-  /* config options here */
   sassOptions: {
     includePaths: [path.join(__dirname, 'src/styles')],
     // prependData: `@use 'variables' as *;`,
