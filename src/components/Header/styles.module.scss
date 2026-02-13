@@ -1,0 +1,87 @@
+@use '@/styles/variables.scss' as *;
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $white;
+}
+
+.headerLogo {
+  justify-self: flex-start;
+  max-width: 200px;
+  min-height: 35px;
+  margin-left: 10px;
+}
+
+.headerWrapper {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  // padding-left: 40px;
+
+  .headerDescription {
+    width: 100%;
+    max-width: 740px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 3px;
+    padding-left: 10px;
+
+    .headerDescription_phone {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+
+      .phoneText {
+        font-size: 22px;
+        padding-left: 10px;
+      }
+    }
+
+    .headerDescription_mail {
+      width: 100%;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .headerDescription_location {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      gap: 15px;
+
+      .locationWrap {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+.mockHeader {
+  max-width: 1576px;
+  height: 100%;
+}
+
+.clientInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 12px;
+  padding: 0 40px 0 24px;
+  white-space: nowrap;
+}
+
+.clientName {
+  color: $white;
+}

@@ -1,0 +1,41 @@
+@use '@/styles/variables' as *;
+
+.menu {
+  height: 50px;
+  text-align: center;
+  background-color: $grey_100;
+  width: 100%;
+  font-size: 18px;
+  justify-content: center;
+  // цвет текста
+  // :global(.ant-menu-overflow-item) {
+  //   display: flex;
+  //   color: red;
+  // }
+
+  :global(.ant-menu-item) {
+    display: flex !important;
+    align-items: center;
+    justify-content: center !important;
+    text-align: center;
+    width: auto;
+  }
+
+  :global(.ant-menu-item-active) {
+    &::after {
+      display: none;
+    }
+  }
+
+  :global(.ant-menu-item-selected) {
+    &::after {
+      display: none;
+    }
+  }
+
+  :global(.ant-menu-item-selected) {
+    a {
+      font-size: 22px !important;
+    }
+  }
+}

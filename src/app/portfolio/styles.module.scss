@@ -1,0 +1,9 @@
+@use '@/styles/variables' as *;
+
+.container {
+  width: 100%;
+  background: linear-gradient(to top, $grey_40, 80%, $grey_100);
+  text-align: center;
+  margin: 10px;
+  padding: 30px 0;
+}

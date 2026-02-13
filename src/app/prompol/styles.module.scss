@@ -1,0 +1,80 @@
+@use '@/styles/variables' as *;
+
+.container {
+  width: 100%;
+  background: linear-gradient(to top, $grey_40, 80%, $grey_100);
+  text-align: center;
+}
+
+/* Контейнер для видео и текста */
+.videoContainer {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Или нужная вам высота, например 458px */
+  overflow: hidden;
+}
+
+/* iframe - видео на весь блок */
+.videoBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  object-fit: cover; /* Обеспечивает заполнение контейнера без искажений */
+  z-index: 1;
+}
+
+/* Текст поверх видео */
+.titleWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон для лучшей читаемости */
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 800px;
+  width: 90%;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: $grey_30 !important;
+}
+
+.titleText {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.linkWrapper {
+  margin-top: 40px;
+  background: $bgButton;
+  height: 80px;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0 45px;
+  border-radius: 32px;
+  transition-duration: 0.2s;
+  transition-property: background-color, color, border-color, box-shadow, opacity, transform, gap;
+  transition-timing-function: ease-in-out;
+  color: $black_100;
+}
+
+.linkText {
+  padding: 10px 0;
+}
+
+.link :hover {
+  cursor: pointer;
+  color: $grey_40;
+
+  color: $text;
+}
