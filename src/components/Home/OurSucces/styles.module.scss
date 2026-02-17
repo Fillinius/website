@@ -19,6 +19,24 @@
 }
 
 .titleWrapper {
+  :global(.ant-typography) {
+    line-height: 46px;
+    font-weight: 900px !important;
+    font-size: 68px;
+    color: $white;
+
+    @media (max-width: 640px) {
+      max-width: 240px;
+      margin-bottom: 0;
+      font-size: 24px;
+      line-height: 50px;
+    }
+
+    //  mobile
+    @media (max-width: 425px) {
+      font-size: 48px;
+    }
+  }
   .title {
     padding-bottom: 15px;
     font-size: 38px;
@@ -30,6 +48,11 @@
     padding-bottom: 20px;
     font-size: 22px;
     max-width: 560px;
+
+    //  mobile
+    @media (max-width: 425px) {
+      max-width: 350px;
+    }
   }
 }
 
@@ -41,6 +64,15 @@
   align-items: center;
   flex-wrap: wrap;
   flex: 1 1 280px;
+
+  //  mobile
+  @media (max-width: 425px) {
+    gap: 0px;
+  }
+  //   tablet
+  // @media(min-width:425px){}
+  // decktop
+  // @media(min-width:1024px){}
 }
 
 .block {
@@ -72,5 +104,11 @@
     line-height: 1.55;
     font-weight: 300;
     text-wrap: wrap;
+  }
+
+  //  mobile
+  @media (max-width: 425px) {
+    height: 150px;
+    padding: 10px;
   }
 }

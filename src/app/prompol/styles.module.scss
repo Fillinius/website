@@ -10,8 +10,14 @@
 .videoContainer {
   position: relative;
   width: 100%;
-  height: 100vh; /* Или нужная вам высота, например 458px */
+  height: 100vh;
+  // min-height: 650px;
   overflow: hidden;
+
+  // //  mobile
+  // @media (width: 768px) {
+  //   min-height: 450px;
+  // }
 }
 
 /* iframe - видео на весь блок */
@@ -19,11 +25,16 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   border: none;
-  object-fit: cover; /* Обеспечивает заполнение контейнера без искажений */
+  object-fit: fill; /* Обеспечивает заполнение контейнера без искажений */
   z-index: 1;
+
+  //  tablet
+  @media (width: 768px) {
+    min-height: 650px;
+  }
 }
 
 /* Текст поверх видео */

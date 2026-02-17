@@ -2,37 +2,55 @@
 
 .container {
   padding: 10px 0;
-
   background: linear-gradient(to top, $grey_40, 80%, $grey_100);
 }
 
 .titleWrapper {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   max-width: 100%;
   height: 444px;
   min-height: 360px;
-  background: 0 0 / cover no-repeat;
   margin-bottom: 45px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); // Регулируйте прозрачность (0.5 = 50%)
+    z-index: 1;
+  }
 }
 
 .title {
+  position: relative;
+  z-index: 2;
   line-height: 46px;
   font-weight: 900px;
   padding: 10px;
+  text-align: center;
 
   :global(.ant-typography) {
     line-height: 46px;
     font-weight: 900px !important;
     font-size: 68px;
-    color: $text;
-  }
+    color: $white;
 
-  @media (max-width: 640px) {
-    max-width: 240px;
-    margin-bottom: 0;
-    font-size: 24px;
-    line-height: 28px;
+    @media (max-width: 640px) {
+      max-width: 240px;
+      margin-bottom: 0;
+      font-size: 24px;
+      line-height: 50px;
+    }
+
+    //  mobile
+    @media (max-width: 425px) {
+      font-size: 48px;
+    }
   }
 }
