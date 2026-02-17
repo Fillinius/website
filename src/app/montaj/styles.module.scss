@@ -12,11 +12,14 @@
   min-height: 600px;
   background: 0 0 / cover no-repeat;
   margin-bottom: 45px;
+
+  //  mobile
+  @media (max-width: 425px) {
+    margin-bottom: 10px;
+  }
 }
 
 .title {
-  line-height: 46px;
-  font-weight: 900px;
   padding: 10px;
   margin-left: 40px;
   margin: auto;
@@ -27,6 +30,11 @@
     text-align: center;
     font-size: 68px;
     color: $white;
+
+    //  mobile
+    @media (max-width: 425px) {
+      font-size: 48px;
+    }
   }
 
   @media (max-width: 640px) {
@@ -34,5 +42,10 @@
     margin-bottom: 0;
     font-size: 24px;
     line-height: 28px;
+    margin: 0;
+  }
+
+  @media (max-width: 425px) {
+    max-width: 400px;
   }
 }

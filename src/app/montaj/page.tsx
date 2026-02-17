@@ -49,7 +49,7 @@ const MontagPage: FC = () => {
     <main className={styles.container}>
       <div className={styles.headWrapper} style={{ backgroundImage: `url(${bgMontag.src})` }}>
         <div className={styles.title}>
-          <Title level={1}>ГК Строй-Град - монтаж любой сложности</Title>
+          <Title level={1}>ГК Строй-Град монтаж любой сложности</Title>
         </div>
       </div>
       {/* <Krovli /> */}

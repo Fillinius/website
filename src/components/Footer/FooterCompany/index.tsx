@@ -13,7 +13,7 @@ export const FooterCompany: FC = () => {
       <div className={styles.text}>
         <p> Адрес: г. Нижний Новгород, ул. Бригадная, 14</p>
         <p>Телефон: +7 910 887 81 18</p>
-        <p>E-Mail: stroy-grad.52@mail.ru</p>
+        <p>E-Mail: stroy-grad.152@mail.ru</p>
         <p>Режим работы: Пн-Пт: 8.00 - 17.00</p>
         <br />
         <p>© ООО "ГК Строй-Град" 2025. Политика конфиденциальности </p>

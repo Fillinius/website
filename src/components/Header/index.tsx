@@ -53,7 +53,7 @@ export const Header: FC = () => {
             <p className={styles.phoneText}>+7 910 887 81 18</p>
           </div>
           <div className={styles.headerDescription_mail}>
-            <p>stroy-grad.52@mail.ru, отдел продаж: anna-stroy-grad.52@mail.ru</p>
+            <p>почта: stroy-grad.152@mail.ru, отдел продаж: anna-stroy-grad.52@mail.ru</p>
           </div>
           <div className={styles.headerDescription_location}>
             <Image src={location} alt="location" />
