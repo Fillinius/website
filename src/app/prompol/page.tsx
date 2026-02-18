@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import { FC, Suspense } from 'react'
 
 import Title from 'antd/es/typography/Title'
 import { Metadata } from 'next'
@@ -6,6 +6,8 @@ import { Metadata } from 'next'
 import styles from './styles.module.scss'
 import Link from 'next/link'
 import { Floor } from '@/components/Prompol'
+import { VideoBG } from '@/ui/VideoBG'
+import { PATHS } from '@/constants/routes'
 
 export const metadata: Metadata = {
   title: {
@@ -50,16 +52,10 @@ const PrompolPage: FC = () => {
     <main className={styles.container}>
       {/* Контейнер для видео и текста */}
       <div className={styles.videoContainer}>
-        {/* iframe с видео */}
-        <iframe
-          className={styles.videoBackground}
-          title="Фоновое видео устройства промышленных полов"
-          allowFullScreen
-          loading="lazy"
-          allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write;"
-          src="https://kinescope.io/embed/c4SW84w9PSjTBg156Ms1fX/?autoplay=true&muted=true&controls=false&loop=true&autopause=false"
-        />
-
+        {/* <VideoSkeleton /> */}
+        <Suspense fallback={<div>Loading...</div>}>
+          <VideoBG />
+        </Suspense>
         {/* Текст поверх видео */}
         <div className={styles.titleWrapper}>
           <Title level={1} className={styles.title}>
@@ -70,7 +66,7 @@ const PrompolPage: FC = () => {
             соблюдение сроков.
           </p>
           <div className={styles.linkWrapper}>
-            <Link href="https://stroy-gradnn.ru/" className={styles.link}>
+            <Link href={PATHS.mainPageFloor} className={styles.link}>
               <p className={styles.linkText}>Более подробная информация на нашем специализированном сайте</p>
               <span>Перейти на профильный сайт</span>
             </Link>

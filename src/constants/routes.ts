@@ -4,4 +4,5 @@ export const PATHS = {
   montaj: '/montaj',
   prompol: '/prompol',
   portfolio: '/portfolio',
+  mainPageFloor: 'https://stroy-gradnn.ru/',
 } as const

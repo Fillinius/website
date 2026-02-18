@@ -10,13 +10,13 @@
 .videoContainer {
   position: relative;
   width: 100%;
-  height: 100vh;
-  // min-height: 650px;
+  // height: 100vh;
+  min-height: 658px;
   overflow: hidden;
 
-  // //  mobile
-  // @media (width: 768px) {
-  //   min-height: 450px;
+  //  mobile
+  // @media (max-width: 425px) {
+  //   height: 550px;
   // }
 }
 
@@ -30,11 +30,6 @@
   border: none;
   object-fit: fill; /* Обеспечивает заполнение контейнера без искажений */
   z-index: 1;
-
-  //  tablet
-  @media (width: 768px) {
-    min-height: 650px;
-  }
 }
 
 /* Текст поверх видео */
@@ -51,6 +46,14 @@
   border-radius: 8px;
   max-width: 800px;
   width: 90%;
+
+  //  mobile
+  @media (max-width: 425px) {
+    padding: 10px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .title {
@@ -58,6 +61,11 @@
   margin-bottom: 1rem;
   font-weight: bold;
   color: $grey_30 !important;
+
+  //  mobile
+  @media (max-width: 425px) {
+    font-size: 48px;
+  }
 }
 
 .titleText {
@@ -68,7 +76,7 @@
 .linkWrapper {
   margin-top: 40px;
   background: $bgButton;
-  height: 80px;
+  min-height: 80px;
   font-size: 16px;
   font-weight: 700;
   padding: 0 45px;

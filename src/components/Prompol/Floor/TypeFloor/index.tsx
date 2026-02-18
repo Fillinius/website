@@ -39,7 +39,7 @@ export const TypeFloor: FC = () => {
           </div>
         </li>
         <li className={styles.typeFloorItem}>
-          <div className={styles.itemTitle}>Топпингованные (упрочненные) полы</div>
+          <div className={styles.itemTitle}>Топпинговые (упрочненные) полы</div>
           <div className={styles.itemText}>
             Упрочнение верхнего слоя – ключевая идея этой технологии. После укладки бетонной смеси, на свежую
             поверхность наносится состав из упрочняющих топпингов. Это важно для придания бетону исключительной
