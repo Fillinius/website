@@ -55,7 +55,21 @@
     .headerDescription_mail {
       width: 100%;
       font-size: 18px;
-      font-weight: 600;
+      font-weight: 400;
+
+      span {
+        font-weight: 600;
+      }
+
+      //  mobile
+      @media (max-width: 425px) {
+        max-width: 240px;
+        padding-left: 10px;
+
+        .small {
+          max-width: 200px;
+        }
+      }
     }
 
     .headerDescription_location {
