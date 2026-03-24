@@ -73,7 +73,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'ГК СтройГрад — строительство ангаров',
     description: 'Полный цикл строительства ангаров',
-    // url: 'https://angarstroy.ru',
+    url: 'https://gc-stroy-grad.ru',
     siteName: 'ГК СтройГрад',
     // images: ['/og-image.jpg'],
     locale: 'ru_RU',
