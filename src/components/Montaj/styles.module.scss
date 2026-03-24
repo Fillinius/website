@@ -1,0 +1,126 @@
+@use '@/styles/variables' as *;
+
+.montagWrapper {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  text-align: center;
+  background: linear-gradient(to top, $grey_40, 80%, $grey_100);
+  padding-top: 45px;
+}
+
+.montagHeaderWrapper {
+  :global(.ant-typography) {
+    font-size: 30px;
+    line-height: 1.23;
+  }
+}
+
+.carouselWrapper {
+  width: 100%;
+  margin: 0 auto;
+
+  :global(.ant-carousel .slick-dots li) {
+    bottom: 25px;
+
+    button {
+      background: $white;
+
+      &::after {
+        background: $text;
+      }
+    }
+  }
+
+  :global(.ant-carousel .slick-dots) {
+    li {
+      &::after {
+        background: $text;
+      }
+    }
+  }
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageContainer {
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.cardImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.imageTitle {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 28px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+/* Для мобильных устройств */
+@media (max-width: 768px) {
+  .imageContainer {
+    width: 90%;
+  }
+
+  .imageTitle {
+    font-size: 16px;
+    padding: 6px 12px;
+    white-space: normal;
+    width: 90%;
+  }
+}
+
+.infoWrapper {
+  text-align: start;
+  padding: 10px;
+  :global(.ant-typography) {
+    font-size: 42px;
+    line-height: 1.23;
+    padding-top: 20px;
+
+    //  mobile
+    @media (max-width: 425px) {
+      font-size: 30px;
+    }
+  }
+}
+
+.info {
+}
+
+.infoLine {
+  margin-bottom: 20px;
+}
+
+.chooseMontagWrapper {
+  padding: 10px;
+  :global(.ant-typography) {
+    font-size: 42px;
+    line-height: 1.23;
+    padding-top: 20px;
+
+    //  mobile
+    @media (max-width: 425px) {
+      font-size: 30px;
+    }
+  }
+}
