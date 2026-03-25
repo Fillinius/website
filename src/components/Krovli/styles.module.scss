@@ -10,8 +10,7 @@
   width: 100%;
   max-width: 1200px;
   margin: auto;
-  padding: 0 10px;
-  padding-top: 60px;
+  padding: 60px 10px;
 
   .title {
     font-size: 42px;
@@ -38,9 +37,39 @@
     margin-bottom: 10px;
   }
 
-  .textRed {
+  .textGreen {
     font-size: 40px;
     line-height: 1.55;
     color: $bgButton;
+  }
+}
+
+.montajInfoWrapper {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 10px;
+  font-size: 20px;
+  line-height: 1.55;
+
+  .title {
+    font-size: 30px;
+    line-height: 1.23;
+    margin-bottom: 20px;
+  }
+
+  .text {
+    font-size: 20px;
+    line-height: 1.55;
+  }
+}
+
+.montajInfoTitle {
+  background: $grey_80;
+  width: 100%;
+}
+
+.montajInfoList {
+  li {
+    margin: 10 0px;
   }
 }

@@ -2,6 +2,7 @@ import vigoPol from '@/assets/images/polVigo.jpeg'
 import vigoPol1 from '@/assets/images/krovlyaVigo1.jpeg'
 import vigoFloor from '@/assets/images/krovlyaVigo.jpeg'
 import ip from '@/assets/images/krovlya1.jpg'
+import prokrep from '@/assets/images/prokrep.jpg'
 
 export const portfolioList = [
   {
@@ -9,8 +10,8 @@ export const portfolioList = [
     title: 'Устройство промышленных полов',
     image: [vigoPol, vigoPol1],
     description:
-      'Устройство топпинговых полов. Выполнена планировка  с последующим устройсвом топпинговых полов. Работы выполнены согласно договору в срок.',
-    orderer: 'Мебельная компания "Виго',
+      'Устройство топпинговых полов. Выполнена планировка  с последующим устройством топпинговых полов. Работы выполнены согласно договору, в срок.',
+    orderer: 'Мебельная компания "Виго" (ул. Лесная)',
     square: 1490,
   },
   {
@@ -19,7 +20,7 @@ export const portfolioList = [
     image: [vigoFloor],
     description:
       'Устройство мембранной кровли. Монтаж фасонных элементов по периметру кровли. Работы сданы согласно договору, несмотря на неполную готовность кровли.',
-    orderer: 'Мебельная компания "Виго',
+    orderer: 'Мебельная компания "Виго" (ул. Лесная)',
     square: 1490,
   },
   {
@@ -28,7 +29,16 @@ export const portfolioList = [
     image: [ip],
     description:
       'В проекте наплавляемая кровля. Помогли заказчику с выбором и заказом материалов.Предоставили все необходимые технические решения.',
-    orderer: 'ИП Митрофанов',
+    orderer: '"ИП Митрофанов" (ул. Новикова Прибоя) ',
     square: 625,
+  },
+  {
+    id: 4,
+    title: 'Устройство мягкой кровли магазина.',
+    image: [prokrep],
+    description:
+      'Кровля нестандартной формы. Выполнен монтаж пирога кровли с учетом установки клинов (разуклонка). Работы выполнены раньше договорного срока.',
+    orderer: '"ПроКрепеж" (ул. Симферопольская)',
+    square: 1521,
   },
 ]

@@ -33,8 +33,7 @@
   max-width: 300px;
 
   .advantageImage {
-    margin: 75px;
-    margin-bottom: 30;
+    margin: 30px 75px;
 
     //  mobile
     @media (max-width: 425px) {
@@ -43,7 +42,7 @@
   }
 
   .advantageTitle {
-    height: 100px;
+    height: 80px;
     font-size: 22px;
     line-height: 1.35;
     text-transform: uppercase;

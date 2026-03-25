@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: ' СтройГрад — мембранные кровли, плоские кровли',
     description: 'Устройство плоских мембранных кровель под ключ',
-    // url: 'https://angarstroy.ru',
+    url: 'https://gc-stroy-grad.ru',
     siteName: ' СтройГрад',
     // images: ['/og-image.jpg'],
     locale: 'ru_RU',

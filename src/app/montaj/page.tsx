@@ -3,6 +3,7 @@ import { FC } from 'react'
 import { Metadata } from 'next'
 import Title from 'antd/es/typography/Title'
 import bgMontag from '@/assets/images/bgMontag.webp'
+import { Montaj } from '@/components'
 
 import styles from './styles.module.scss'
 
@@ -24,11 +25,13 @@ export const metadata: Metadata = {
     'монтаж складов',
     'монтаж ангаров',
     'монтаж промышленных зданий',
+    'монтаж быстровозводимых зданий',
+    'монтаж быстровозводимых складов',
   ],
   openGraph: {
     title: ' СтройГрад — монтаж металлоконструкций любой сложности, монтаж ограждающих конструкций',
     description: 'Монтаж ангаров, складов, под ключ людой сложности',
-    // url: 'https://angarstroy.ru',
+    url: 'https://gc-stroy-grad.ru',
     siteName: ' СтройГрад',
     // images: ['/og-image.jpg'],
     locale: 'ru_RU',
@@ -52,10 +55,7 @@ const MontagPage: FC = () => {
           <Title level={1}>ГК Строй-Град монтаж любой сложности</Title>
         </div>
       </div>
-      {/* <Krovli /> */}
-      <div>
-        <strong>Раздел находится в стадии разработки</strong>
-      </div>
+      <Montaj />
     </main>
   )
 }

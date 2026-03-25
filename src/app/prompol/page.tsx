@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: ' СтройГрад — устройство промышленных полов',
     description: 'Полный цикл устройства промышленных полов',
-    // url: 'https://angarstroy.ru',
+    url: 'https://gc-stroy-grad.ru',
     siteName: ' СтройГрад',
     // images: ['/og-image.jpg'],
     locale: 'ru_RU',
