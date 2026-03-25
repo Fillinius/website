@@ -2,7 +2,9 @@ import { FC } from 'react'
 
 import styles from './styles.module.scss'
 import Title from 'antd/es/typography/Title'
+import Image from 'next/image'
 import { Advantage } from '@/ui/Advantage'
+import tnIcon from '@/assets/images/tnClassic.png'
 import { advantageKrovli } from './constants'
 
 export const Krovli: FC = () => {
@@ -24,11 +26,43 @@ export const Krovli: FC = () => {
           вести работы круглогодично, даже при отрицательных температурах.
         </p>
       </section>
-      <section className={styles.chooseKrovliWrapper}>
+      <article className={styles.montajInfoWrapper}>
         <Title level={3} className={styles.title}>
-          Монтаж мембранной кровли
+          Мембранная кровля: особенности монтажа
         </Title>
-        <p className={styles.textRed}> Почему нам доверяют?</p>
+        <p className={styles.montajInfoTitle}>
+          Мембранная кровля — это разновидность кровельного покрытия, которая производится на основе полимеров с
+          добавлением в состав пластификаторов для придания материалу достаточной гибкости. Кровельная мембрана
+          выпускается толщиной от 0,8 до 2 мм. Состоит из 2-х слоев, между которыми находится сетка из полиэстера или
+          стеклоткани, обеспечивающая необходимую прочность. Верхний слой обычно имеет светлый оттенок и изготавливается
+          с добавлением стабилизаторов и антипиренов, нижний — выполняется в темных цветах и не содержит добавок.
+        </p>
+        <ul className={styles.montajInfoList}>
+          <li>
+            <b>Где применяют мембранную кровлю</b>
+            <p>
+              Кровельная мембрана обычно устанавливается на плоских или низкоскатных крышах. Установка кровельной
+              мембраны создает герметичный барьер против влаги, что обеспечивает гидроизоляцию плоской крыши. Также
+              мембраны используют для обустройства крыш со сложной геометрией, в том числе сферических.
+            </p>
+          </li>
+          <li>
+            <b>Основной тип монтируемых кровель (ТН-классик)</b>
+            <Image src={tnIcon} alt="ТН-Классик" />
+            <ol>
+              <li>1. Кровельная ПВХ мембрана</li>
+              <li>2. Телескопический крепеж</li>
+              <li>3. Саморез сверлоконечный</li>
+              <li>4. Утеплитель верхний слой плотность плотность не менее 150кг/м3 </li>
+              <li>5. Клин - для устройства разуклонки</li>
+              <li>6. Утеплитель нижний слой плотностью не менее 100 кг/м3</li>
+              <li>7. Паробарьер</li>
+            </ol>
+          </li>
+        </ul>
+      </article>
+      <section className={styles.chooseKrovliWrapper}>
+        <p className={styles.textGreen}> Почему нам доверяют?</p>
         <Advantage {...advantageKrovli} />
       </section>
     </div>
