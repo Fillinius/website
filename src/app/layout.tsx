@@ -5,7 +5,7 @@ import { Roboto } from 'next/font/google'
 import { Suspense } from 'react'
 import { ConfigProvider, ConfigProviderProps, ThemeConfig } from 'antd'
 import { COLORS } from '@/styles/colors'
-import { Header, Footer } from '@/components'
+import { Header, Footer, BtnChat } from '@/components'
 
 import './globals.css'
 
@@ -68,6 +68,7 @@ export const metadata: Metadata = {
     'строительство ангаров',
     'ангар под ключ',
     'быстровозводимые ангары',
+    'быстровозводимый склад',
     'металлоконструкции ангаров, мягкие кровли, кровли ПВХ, мембранные кровли, промышленные полы, топинговые полы, полимерные полы, монтаж мк, монтаж металлоконструкций, монтаж профлиста, монтаж профнастила, монтаж сп, монтаж сэндвич панелей',
   ],
   openGraph: {
@@ -108,6 +109,7 @@ export default function RootLayout({
           <ConfigProvider theme={config}>
             <Header />
             <Suspense fallback={<div>Загрузка данных...</div>}>{children}</Suspense>
+            <BtnChat />
             <Footer />
           </ConfigProvider>
         </AntdRegistry>
