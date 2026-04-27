@@ -1,7 +1,7 @@
 import '@ant-design/v5-patch-for-react-19'
 import type { Metadata } from 'next'
 import { AntdRegistry } from '@ant-design/nextjs-registry'
-import { Roboto } from 'next/font/google'
+// import { Roboto } from 'next/font/google'
 import { Suspense } from 'react'
 import { ConfigProvider, ConfigProviderProps, ThemeConfig } from 'antd'
 import { COLORS } from '@/styles/colors'
@@ -13,10 +13,8 @@ type Locale = ConfigProviderProps['locale']
 
 const config: ThemeConfig = {
   token: {
-    fontFamily: "'Roboto', sans-serif",
-    // colorPrimary: COLORS.primary_green_200,
+    fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
     colorText: COLORS.black_100,
-    // colorTextPlaceholder: COLORS.black_100,
     fontSizeHeading1: 40,
     fontSizeHeading2: 24,
     fontSizeHeading3: 18,
@@ -24,37 +22,23 @@ const config: ThemeConfig = {
     lineHeightHeading1: 1.1,
   },
   components: {
-    // Menu: {
-    //   colorBgContainer: COLORS.primary_green_200,
-    //   horizontalItemHoverBg: COLORS.green_50,
-    //   horizontalItemSelectedBg: COLORS.green_50,
-    //   colorText: COLORS.white,
-    //   horizontalItemHoverColor: COLORS.white,
-    //   horizontalItemSelectedColor: COLORS.white,
-    // },
-    // Typography: {
-    //   colorTextHeading: COLORS.black_100,
-    // },
     Button: {
       textTextColor: COLORS.white,
       textTextActiveColor: COLORS.white,
       textTextHoverColor: COLORS.white,
     },
-    Input: {
-      // colorTextPlaceholder: COLORS.black_100
-    },
+    Input: {},
     Select: {
-      // colorText: COLORS.black_100,
       colorTextPlaceholder: COLORS.black_100,
     },
   },
 }
 
-const robotoSerif = Roboto({
-  weight: ['100', '300', '400', '500', '700', '900'],
-  variable: '--font-roboto-cyrillic',
-  subsets: ['cyrillic'],
-})
+// const robotoSerif = Roboto({
+//   weight: ['100', '300', '400', '500', '700', '900'],
+//   variable: '--font-roboto-cyrillic',
+//   subsets: ['cyrillic'],
+// })
 
 //TODO
 export const metadata: Metadata = {
@@ -104,7 +88,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      <body className={`${robotoSerif.variable} `}>
+      <body>
         <AntdRegistry>
           <ConfigProvider theme={config}>
             <Header />
