@@ -1,19 +1,48 @@
 services:
+  nextjs:
+    build: .
+    container_name: stroygrad-nextjs
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      # Для Ant Design патча
+      - NODE_OPTIONS=--max-old-space-size=512
+    expose:
+      - '3000'
+    networks:
+      - webnet
+    healthcheck:
+      test:
+        ['CMD', 'node', '-e', "fetch('http://localhost:3000').then(r=>r.status===200?process.exit(0):process.exit(1))"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
   nginx:
-    image: nginx
+    image: nginx:alpine
+    container_name: stroygrad-nginx
     ports:
       - '80:80'
       - '443:443'
-    command: '/bin/sh -c ''while :; do sleep 12h & wait $${!} ; nginx -s reload; done &nginx -g "daemon off;"'''
     volumes:
-      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
-      # - ./app:/static
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
       - ./certbot/www:/var/www/certbot
       - ./certbot/data:/etc/letsencrypt
+    depends_on:
+      - nextjs
+    restart: unless-stopped
+    networks:
+      - webnet
 
   certbot:
     image: certbot/certbot
-    entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done'"
+    container_name: stroygrad-certbot
     volumes:
       - ./certbot/www:/var/www/certbot
       - ./certbot/data:/etc/letsencrypt
+    entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done'"
+
+networks:
+  webnet:
+    driver: bridge
