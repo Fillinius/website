@@ -1,6 +1,6 @@
 services:
   nginx:
-    build: .
+    image: nginx
     ports:
       - '80:80'
       - '443:443'
