@@ -26,19 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: ' СтройГрад — мембранные кровли, плоские кровли',
     description: 'Устройство плоских мембранных кровель под ключ',
-    url: 'https://gc-stroy-grad.ru',
-    siteName: ' СтройГрад',
-    // images: ['/og-image.jpg'],
-    locale: 'ru_RU',
-    type: 'website',
-  },
-  // verification: {
-  //   yandex: 'your-yandex-verification',
-  // },
-
-  robots: {
-    index: true,
-    follow: true,
+    url: 'https://gc-stroy-grad.ru/krovli',
   },
 }
 
