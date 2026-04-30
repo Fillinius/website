@@ -29,22 +29,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: ' СтройГрад — устройство промышленных полов',
     description: 'Полный цикл устройства промышленных полов',
-    url: 'https://gc-stroy-grad.ru',
-    siteName: ' СтройГрад',
-    // images: ['/og-image.jpg'],
-    locale: 'ru_RU',
-    type: 'website',
+    url: 'https://gc-stroy-grad.ru/prompol',
   },
-  // verification: {
-  //   yandex: 'your-yandex-verification',
-  // },
   alternates: {
     canonical: 'https://stroy-gradnn.ru/',
   }, // SEO-эффект: Переносит ссылочный вес с дублей на главную страницу, улучшая ранжирование.
-  robots: {
-    index: true,
-    follow: true,
-  },
 }
 
 const PrompolPage: FC = () => {

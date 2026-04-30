@@ -31,11 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: ' СтройГрад — монтаж металлоконструкций любой сложности, монтаж ограждающих конструкций',
     description: 'Монтаж ангаров, складов, под ключ людой сложности',
-    url: 'https://gc-stroy-grad.ru',
-    siteName: ' СтройГрад',
-    // images: ['/og-image.jpg'],
-    locale: 'ru_RU',
-    type: 'website',
+    url: 'https://gc-stroy-grad.ru/montaj',
   },
   // verification: {
   //   yandex: 'your-yandex-verification',
