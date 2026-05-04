@@ -3,7 +3,7 @@
 import { FC } from 'react'
 
 import Title from 'antd/es/typography/Title'
-import { Home } from '@/components'
+import { CookieConsent, Home } from '@/components'
 import bgImage from '@/assets/images/bgHome.jpg.webp'
 
 import styles from './styles.module.scss'
@@ -17,6 +17,7 @@ const HomePage: FC = () => {
         </div>
       </div>
       <Home />
+      <CookieConsent />
     </main>
   )
 }

@@ -70,11 +70,12 @@ export const metadata: Metadata = {
     locale: 'ru_RU',
     type: 'website',
   },
-  // verification: {
-  //   yandex: 'your-yandex-verification',
-  // },
   alternates: {
     canonical: 'https://gc-stroy-grad.ru',
+  },
+  verification: {
+    yandex: 'e36d23bc2d94d25c',
+    google: '0BXBBfZWJwicpcEDi5LeWKqtyOZAprdphsYcRIIQwRM',
   },
   robots: {
     index: true,
