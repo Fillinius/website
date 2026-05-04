@@ -5,6 +5,11 @@
   text-align: center;
   text-overflow: ellipsis;
   line-height: 1.55;
+
+  //  mobile
+  @media (max-width: 425px) {
+    padding: 0 20px;
+  }
 }
 
 .titleWrappre {
@@ -15,6 +20,12 @@
   :global(.ant-typography) {
     font-size: 30px !important;
     line-height: 1.55 !important;
+
+    //  mobile
+    @media (max-width: 425px) {
+      line-height: 1.2 !important;
+      font-size: 26px !important;
+    }
   }
 }
 
@@ -37,6 +48,7 @@
     flex-direction: column;
     list-style: circle;
     gap: 15px;
+    padding-left: 10px;
   }
 }
 .text {

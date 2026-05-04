@@ -6,8 +6,9 @@ import btnChatIcon from '@/assets/svg/phone_consultation.svg'
 import styles from './styles.module.scss'
 import Link from 'next/link'
 import { PATHS } from '@/constants/routes'
+import { FC } from 'react'
 
-export const BtnChat = () => {
+export const BtnChat: FC = () => {
   return (
     <div className={styles.btnWrapper}>
       <Link href={PATHS.telegram} target="_blank" className={styles.link}>
