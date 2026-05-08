@@ -9,7 +9,7 @@ export const AboutCompany: FC = () => {
     <article className={styles.container}>
       <div className={styles.titleWrappre}>
         <Title level={2} className={styles.textTitle}>
-          ООО «Строй-Град» - строительная компания, отличающаяся индивидуальным подходом в поиске готовых решений по
+          ООО «ГК Строй-Град» - строительная компания, отличающаяся индивидуальным подходом в поиске готовых решений по
           устройству, строительству и ремонту.
         </Title>
         <p className={styles.text}>

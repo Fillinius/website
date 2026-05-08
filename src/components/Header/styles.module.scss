@@ -39,6 +39,35 @@
     gap: 3px;
     padding-left: 20px;
 
+    .descriptionWrap {
+      display: flex;
+      gap: 20px;
+      //  mobile
+      @media (max-width: 925px) {
+        flex-direction: column;
+      }
+
+      .headerPhone {
+        max-width: 380px;
+        @media (max-width: 925px) {
+          width: 100%;
+        }
+      }
+
+      .headerAddress {
+        @media (max-width: 925px) {
+          display: none;
+        }
+      }
+      .headerAddress {
+        max-width: 230px;
+
+        @media (max-width: 925px) {
+          width: 100%;
+        }
+      }
+    }
+
     .headerDescription_phone {
       width: 100%;
       display: flex;

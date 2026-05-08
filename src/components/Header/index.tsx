@@ -48,24 +48,30 @@ export const Header: FC = () => {
           </Link>
         </div>
         <div className={styles.headerDescription}>
-          <div className={styles.headerDescription_phone}>
-            <Image src={callIcon} alt="call" />
-            <p className={styles.phoneText}>+7 910 887 81 18</p>
-          </div>
-          <div className={styles.headerDescription_mail}>
-            <p>
-              строительство под "ключ": <span>stroy-grad.152@mail.ru </span>
-            </p>
-            <p className={styles.small}>
-              промышленные полы:
-              <span> stroy-grad.52@mail.ru</span>
-            </p>
-          </div>
-          <div className={styles.headerDescription_location}>
-            <Image src={location} alt="location" />
-            <div className={styles.locationWrap}>
-              <p className={styles.text}>г. Нижний Новгород, ул. Бригадная, 14</p>
-              <p className={styles.text}>Режим работы: Пн-Пт: 8.00 - 17.00</p>
+          <div className={styles.descriptionWrap}>
+            <div className={styles.headerPhone}>
+              <div className={styles.headerDescription_phone}>
+                <Image src={callIcon} alt="call" />
+                <p className={styles.phoneText}>+7 910 887 81 18</p>
+              </div>
+              <div className={styles.headerDescription_location}>
+                <Image src={location} alt="location" />
+                <div className={styles.locationWrap}>
+                  <p className={styles.text}>г. Нижний Новгород, ул. Бригадная, 14</p>
+                  <p className={styles.text}>Режим работы: Пн-Пт: 8.00 - 17.00</p>
+                </div>
+              </div>
+            </div>
+            <div className={styles.headerAddress}>
+              <div className={styles.headerDescription_mail}>
+                <p>
+                  строительство под "ключ": <span>stroy-grad.152@mail.ru </span>
+                </p>
+                <p className={styles.small}>
+                  промышленные полы:
+                  <span> stroy-grad.52@mail.ru</span>
+                </p>
+              </div>
             </div>
           </div>
         </div>
