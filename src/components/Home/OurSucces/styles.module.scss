@@ -9,7 +9,6 @@
 
 .ourSuccesWrapper {
   width: 100%;
-  // max-width: 940px;
   margin: 0 40px;
   margin-top: 60px;
 
@@ -23,7 +22,7 @@
     line-height: 46px;
     font-weight: 900px !important;
     font-size: 68px;
-    color: $white;
+    color: $black_100 !important;
 
     @media (max-width: 640px) {
       max-width: 240px;

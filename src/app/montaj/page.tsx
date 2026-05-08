@@ -48,7 +48,15 @@ const MontagPage: FC = () => {
     <main className={styles.container}>
       <div className={styles.headWrapper} style={{ backgroundImage: `url(${bgMontag.src})` }}>
         <div className={styles.title}>
-          <Title level={1}>ГК Строй-Град монтаж любой сложности</Title>
+          <Title level={1}>
+            Монтаж металлоконструкций <strong>от 28 000 руб/т</strong>
+          </Title>
+          <Title level={2}>
+            Монтаж сэндвич панелей <strong>от 1000 руб/м²</strong>
+          </Title>
+          <Title level={3}>
+            Монтаж профнастила <strong>от 500 руб/м²</strong>
+          </Title>
         </div>
       </div>
       <Montaj />

@@ -35,7 +35,9 @@ const KrovliPage: FC = () => {
     <main className={styles.container}>
       <div className={styles.headWrapper} style={{ backgroundImage: `url(${bgImageKrovli.src})` }}>
         <div className={styles.title}>
-          <Title level={1}>ГК Строй-Град - устройство плоских, мембранных кровель</Title>
+          <Title level={1}>
+            Устройство плоских, мембранных кровель <strong>от 600 руб/м² * </strong>
+          </Title>
         </div>
       </div>
       <Krovli />
