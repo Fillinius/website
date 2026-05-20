@@ -1,8 +1,11 @@
 'use client'
 
-import { Button, Modal } from 'antd'
+import { Modal } from 'antd'
 import { FC, useEffect, useState } from 'react'
-import YandexMetrica from '../YandexMetrika'
+import Link from 'next/link'
+import { PATHS } from '@/constants/routes'
+
+import styles from './styles.module.scss'
 
 export const CookieConsent: FC = () => {
   const [isModalCookieOpen, setIsModalCookieOpen] = useState<boolean>(false)
@@ -32,13 +35,14 @@ export const CookieConsent: FC = () => {
       closable={false}
       centered
       width={480}
-      // styles={{
-      //   body: { padding: '5px 5px' },
-      // }}
     >
       <p>
         Мы используем файлы cookie для улучшения работы сайта и анализа трафика. Продолжая пользоваться сайтом, вы
         соглашаетесь с обработкой cookie.
+        <br />
+        <Link href={PATHS.policy} className={styles.link}>
+          Узнать больше
+        </Link>
       </p>
     </Modal>
   )
