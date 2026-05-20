@@ -7,5 +7,6 @@ import { Portfolio } from './Portfolio'
 import { Floor } from './Prompol'
 import { BtnChat } from './BtnChat'
 import { CookieConsent } from './Cookie'
+import { Policy } from './Cookie/Policy'
 
-export { Header, Footer, Home, Krovli, Montaj, Portfolio, Floor, BtnChat, CookieConsent }
+export { Header, Footer, Home, Krovli, Montaj, Portfolio, Floor, BtnChat, CookieConsent, Policy }

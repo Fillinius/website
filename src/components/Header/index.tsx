@@ -13,11 +13,33 @@ import location from '@/assets/svg/location.svg'
 import styles from './styles.module.scss'
 import { CustomMenu } from '@/ui/CustomMenu'
 
+declare global {
+  interface Window {
+    gtag?: (...args: any[]) => void
+  }
+}
+
 export const Header: FC = () => {
   const [headerSize, setHeaderSize] = useState<number>(1200)
   const [loading, setLoaing] = useState<boolean>(true)
 
   const headerRef = useRef<HTMLDivElement>(null)
+
+  // Хук для отслеживания кликов
+  const useTrackClick = (eventName: string) => {
+    return () => {
+      if (typeof window !== 'undefined' && window.gtag) {
+        window.gtag('event', eventName, {
+          event_time: new Date().toISOString(),
+          page_url: window.location.href,
+        })
+      }
+    }
+  }
+
+  const trackPhoneClick = useTrackClick('phone_click')
+  const trackEmailConstructionClick = useTrackClick('email_construction_click')
+  const trackEmailIndustrialClick = useTrackClick('email_industrial_click')
 
   const resizeHeadler = () => {
     if (headerRef.current) {
@@ -52,7 +74,9 @@ export const Header: FC = () => {
             <div className={styles.headerPhone}>
               <div className={styles.headerDescription_phone}>
                 <Image src={callIcon} alt="call" />
-                <p className={styles.phoneText}>+7 910 887 81 18</p>
+                <Link href="tel:+79108878118" onClick={trackPhoneClick} className={styles.phoneText}>
+                  +7 910 887 81 18
+                </Link>
               </div>
               <div className={styles.headerDescription_location}>
                 <Image src={location} alt="location" />
@@ -64,13 +88,20 @@ export const Header: FC = () => {
             </div>
             <div className={styles.headerAddress}>
               <div className={styles.headerDescription_mail}>
-                <p>
+                <Link
+                  href="mailto:stroy-grad.152@mail.ru?subject=Запрос%20от%20клиента"
+                  onClick={trackEmailConstructionClick}
+                >
                   строительство под "ключ": <span>stroy-grad.152@mail.ru </span>
-                </p>
-                <p className={styles.small}>
+                </Link>
+                <Link
+                  href="mailto:stroy-grad.52@mail.ru?subject=Запрос%20от%20клиента"
+                  onClick={trackEmailIndustrialClick}
+                  className={styles.small}
+                >
                   промышленные полы:
                   <span> stroy-grad.52@mail.ru</span>
-                </p>
+                </Link>
               </div>
             </div>
           </div>
