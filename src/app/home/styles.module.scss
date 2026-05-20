@@ -111,7 +111,9 @@
   transition: 0.3s;
 
   :hover {
-    text-transform: uppercase;
+    transform: scale(1.1); // анимируемое свойство
+    background: rgba(0, 0, 0, 0.8); // анимируемое свойство
+    letter-spacing: 1px; // анимируемое свойство
   }
 
   @media (max-width: 768px) {
