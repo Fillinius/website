@@ -4,6 +4,7 @@ import path from 'path'
 const nextConfig: NextConfig = {
   output: 'standalone',
   reactStrictMode: true,
+  // productionBrowserSourceMaps: true, // Включить генерацию source maps только для production, но код можно будет увитель на стороне браузера
   sassOptions: {
     includePaths: [path.join(__dirname, 'src/styles')],
   },
