@@ -7,11 +7,6 @@
   width: 100%;
   font-size: 18px;
   justify-content: center;
-  // цвет текста
-  // :global(.ant-menu-overflow-item) {
-  //   display: flex;
-  //   color: red;
-  // }
 
   :global(.ant-menu-item) {
     display: flex !important;
@@ -19,6 +14,11 @@
     justify-content: center !important;
     text-align: center;
     width: auto;
+    transition: transform 0.3s ease;
+
+    :hover {
+      transform: scale(1.2);
+    }
   }
 
   :global(.ant-menu-item-active) {

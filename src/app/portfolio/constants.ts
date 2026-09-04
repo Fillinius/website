@@ -3,6 +3,8 @@ import vigoPol1 from '@/assets/images/krovlyaVigo1.jpeg'
 import vigoFloor from '@/assets/images/krovlyaVigo.jpeg'
 import ip from '@/assets/images/krovlya1.jpg'
 import prokrep from '@/assets/images/prokrep.jpg'
+import geolog from '@/assets/images/geolog.jpg'
+import depo from '@/assets/images/depo.jpg'
 
 export const portfolioList = [
   {
@@ -40,5 +42,22 @@ export const portfolioList = [
       'Кровля нестандартной формы. Выполнен монтаж пирога кровли с учетом установки клинов (разуклонка). Работы выполнены раньше договорного срока.',
     orderer: '"ПроКрепеж" (ул. Симферопольская)',
     square: 1521,
+  },
+  {
+    id: 5,
+    title: 'Устройство промышленных полов в троллейбусном депо.',
+    image: [depo],
+    description: 'Устройство топпинговых полов с учетом приямков и водосборных лотков',
+    orderer: '"Троллейбусное ДЕПО №3" (ул. пр.Ленина)',
+    square: 380,
+  },
+  {
+    id: 6,
+    title: 'Устройство промышленных полов внутри здания.',
+    image: [geolog],
+    description:
+      'Выполненен демонтаж старого пола, сделана планировка песчаного основания, выполнен монтаж топпингового пола в том числе 3 пандусов',
+    orderer: 'Частное лицо" (ул. геологов)',
+    square: 1146,
   },
 ]
